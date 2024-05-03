@@ -74,6 +74,7 @@ class LoginPage extends StatelessWidget
               child: ElevatedButton (
                 style: ElevatedButton.styleFrom(backgroundColor: AppColor.primary),
               onPressed: () {
+                Navigator.pushNamed(context, '/home');
                 print('Log in is clicked');
               },
             child: Text('Log in',

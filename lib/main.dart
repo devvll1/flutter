@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:villa_flutter_app/home_page.dart';
 import 'package:villa_flutter_app/login_page.dart';
 
 // Define the AppColor class
@@ -21,6 +22,9 @@ class MyApp extends StatelessWidget{
         // You can add more theme properties here
       ),
       home: LoginPage(),
+      routes: {
+        '/home': (context) => HomePage(),
+  },
     );
   }
 }
